@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
       )}
     </>
-  );
+  )
 };
 
 export default AppWrap(

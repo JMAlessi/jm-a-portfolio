@@ -3,9 +3,9 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
-import './Testimonial.scss';
+import './Testimonials.scss';
 
-const Testimonial = () => {
+const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
   const [brands, setBrands] = useState([]);
@@ -30,9 +30,9 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
-          <div className="app__testimonial-item app__flex">
+          <div className="app__testimonials-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
-            <div className="app__testimonial-content">
+            <div className="app__testimonials-content">
               <p className="p-text">{testimonials[currentIndex].feedback}</p>
               <div>
                 <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
@@ -41,7 +41,7 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="app__testimonial-btns app__flex">
+          <div className="app__testimonials-btns app__flex">
             <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
               <HiChevronLeft />
             </div>
@@ -53,7 +53,7 @@ const Testimonial = () => {
         </>
       )};
 
-      <div className="app__testimonial-brands app__flex">
+      <div className="app__testimonials-brands app__flex">
         {brands.map((brand) => (
           <motion.div
             whileInView={{ opacity: [0, 1] }}
@@ -69,7 +69,7 @@ const Testimonial = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Testimonial, 'app__testimonial'),
-  'testimonial',
+  MotionWrap(Testimonials, 'app__testimonials'),
+  'testimonials',
   'app__primarybg',
 );
