@@ -1,29 +1,27 @@
 {
-  "root": true,
-  "api": {
-    "projectId": "7rugpmsh",
-    "dataset": "production"
-  },
-  "project": {
-    "name": "JM-A-Portfolio_backend"
-  },
-  "plugins": [
-    "@sanity/base",
-    "@sanity/default-layout",
-    "@sanity/default-login",
-    "@sanity/desk-tool"
-  ],
-  "env": {
-    "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
-    }
-  },
-  "parts": [
-    {
-      "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema"
-    }
-  ]
+	"root": true,
+	"api": {
+		"projectId": "7rugpmsh",
+		"dataset": "production"
+	},
+	"project": {
+		"name": "j-a-software-portfolio-backend"
+	},
+	"plugins": [
+		"@sanity/base",
+		"@sanity/default-layout",
+		"@sanity/default-login",
+		"@sanity/desk-tool"
+	],
+	"env": {
+		"development": {
+			"plugins": ["@sanity/vision"]
+		}
+	},
+	"parts": [
+		{
+			"name": "part:@sanity/base/schema",
+			"path": "./schemas/schema"
+		}
+	]
 }
