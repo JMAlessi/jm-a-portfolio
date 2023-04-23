@@ -1,47 +1,61 @@
 {
-  "name": "jm-a-portfolio_frontend",
-  "version": "0.1.0",
-  "description": "React frontend for JM-A Portfolio.",
-  "author": "J. A.",
-  "private": true,
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.8.2",
-    "@sanity/client": "^2.23.2",
-    "@sanity/image-url": "^1.0.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^14.2.0",
-    "framer-motion": "^6.3.4",
-    "node-sass": "^7.0.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.3.1",
-    "react-redux": "^8.0.2",
-    "react-scripts": "5.0.1",
-    "react-tooltip": "^4.2.21"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "j-a-software-portfolio-frontend",
+	"version": "0.1.0",
+	"description": "J. A. Software Developer Portfolio Frontend.",
+	"author": "J. A. Software",
+	"private": true,
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.8.2",
+		"@sanity/client": "^2.23.2",
+		"@sanity/image-url": "^1.0.1",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.2.0",
+		"@testing-library/user-event": "^14.2.0",
+		"framer-motion": "^6.3.4",
+		"node-sass": "^7.0.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-icons": "^4.3.1",
+		"react-redux": "^8.0.2",
+		"react-scripts": "5.0.1",
+		"react-tooltip": "^4.2.21"
+	},
+	"devDependencies": {
+		"@jridgewell/sourcemap-codec": "^1.4.15",
+		"@npmcli/fs": "^3.1.0",
+		"@rollup/plugin-babel": "^5.3.0",
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-image": "^3.0.0",
+		"@rollup/plugin-node-resolve": "^11.0.0",
+		"@rollup/plugin-replace": "^2.3.3",
+		"@rollup/plugin-terser": "^0.4.1",
+		"got": "^12.6.0",
+		"rollup-plugin-workbox": "^7.0.0",
+		"svgo": "^3.0.2",
+		"uuid": "^9.0.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build && rollup -c",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }

@@ -1,30 +1,28 @@
 {
-  "name": "jm-a-portfolio_backend",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Sanity backend for JM-A Portfolio.",
-  "main": "package.json",
-  "author": "J. A.",
-  "scripts": {
-    "start": "sanity start",
-    "build": "sanity build"
-  },
-  "keywords": [
-    "sanity"
-  ],
-  "dependencies": {
-    "@sanity/base": "^2.30.0",
-    "@sanity/core": "^2.30.0",
-    "@sanity/default-layout": "^2.30.0",
-    "@sanity/default-login": "^2.30.0",
-    "@sanity/desk-tool": "^2.30.0",
-    "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.30.0",
-    "eslint": "^8.6.0",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "styled-components": "^5.2.0"
-  },
-  "devDependencies": {}
+	"name": "j-a-software-portfolio-backend",
+	"version": "1.0.0",
+	"description": "J. A. Software Developer Portfolio Backend.",
+	"author": "J. A. Software",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/your-username/your-repo.git"
+	},
+	"homepage": "https://example.com",
+	"scripts": {
+		"start": "sanity start",
+		"build": "sanity build"
+	},
+	"keywords": [
+		"sanity"
+	],
+	"dependencies": {
+		"@sanity/base": "^2.30.0",
+		"@sanity/core": "^2.36.1",
+		"@sanity/default-layout": "^2.30.0",
+		"@sanity/default-login": "^2.30.0",
+		"@sanity/desk-tool": "^2.30.0",
+		"@sanity/vision": "^2.30.0",
+		"styled-components": "^5.3.9"
+	}
 }
