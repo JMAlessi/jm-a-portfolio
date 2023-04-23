@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "7rugpmsh",
+    "dataset": "production"
+  },
   "project": {
     "name": "JM-A-Portfolio_backend"
-  },
-  "api": {
-    "projectId": "uj03zis2",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
